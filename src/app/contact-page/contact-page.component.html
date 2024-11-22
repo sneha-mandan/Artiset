@@ -1,0 +1,190 @@
+<!-- <app-navbar></app-navbar>
+<div class="hero-section">
+    <img src="assets/contact.jpg" alt="Hero Image" class="hero-image" height="500px" width="100%">
+</div>
+
+<div class="info-section">
+    <h2>Get in touch with us for your IT needs, whether you're an enterprise, individual, trainer, or media professional.</h2>
+
+
+    <div class="container">
+        <div class="card">
+            <div class="image-container">
+                <img src="assets\pexels-divinetechygirl-1181534.jpg" alt="Become a trainer">
+            </div>
+            <div class="card-content">
+                <h3>Become a trainer</h3>
+                <div class="email-section" (click)="redirectToGmail()">
+                    <i class="fa fa-envelope"></i>
+                    <span class="email">admin&#64;artiset.in</span>
+                  </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="assets\pexels-hillaryfox-1595392.jpg" alt="Get trained">
+            </div>
+            <div class="card-content">
+                <h3>Get trained</h3>
+                <div class="email-section" (click)="redirectToGmail()">
+                    <i class="fa fa-envelope"></i>
+                    <span class="email">admin&#64;artiset.in</span>
+                  </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="assets\pexels-fauxels-3184418.jpg" alt="Work with us">
+            </div>
+            <div class="card-content">
+                <h3>Work with us</h3>
+                <div class="email-section" (click)="redirectToGmail()">
+                    <i class="fa fa-envelope"></i>
+                    <span class="email">admin&#64;artiset.in</span>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-container">
+        <div class="address">
+            <img src="assets/location-icon.png" alt="Location Icon" class="icon">
+            <p>Head Quarter 101, Ocean Complex,<br>Sec-18,<br>Noida-201301</p>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="assets/call-icon.png" alt="Phone Icon" class="icon">
+                <p (click)="redirectToCall()">+91 8600735433</p>
+            </div>
+            <div class="contact-item">
+                <img src="assets/mail-icon.png" alt="Email Icon" class="icon">
+                <p (click)="redirectToGmail()">admin&#64;artiset.in</p>
+            </div>
+            <div class="contact-item">
+                <img src="assets/whatsapp-icon.png" alt="WhatsApp Icon" class="icon">
+                <p (click)="redirectToWhatsApp()">+91 8600735433</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="background-image">
+            <img src="assets/form-bg-img.png" alt="Background" class="background-image">
+        </div>
+    
+        <div class="form-wrapper">
+            <h2 class="form-header">Stay connected with us for latest news and updates</h2>
+            <div class="form-content">
+                <form>
+                    <input type="text" placeholder="Enter your full name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="tel" placeholder="Phone Number" />
+                    <input type="text" placeholder="Job Title" />
+                    <textarea placeholder="How Can We Help You?"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer> -->
+
+    <!-- above code is without google recaptcha -->
+
+
+
+    <!-- below code is with google recaptcha -->
+    <app-navbar></app-navbar>
+
+    <div class="hero-section">
+      <img src="assets/contact.jpg" alt="Hero Image" class="hero-image" height="500px" width="100%">
+    </div>
+    
+    <div class="info-section">
+      <h2>Get in touch with us for your IT needs, whether you're an enterprise, individual, trainer, or media professional.</h2>
+    
+      <div class="container">
+        <div class="card">
+          <div class="image-container">
+            <img src="assets/pexels-divinetechygirl-1181534.jpg" alt="Become a trainer">
+          </div>
+          <div class="card-content">
+            <h3>Become a trainer</h3>
+            <div class="email-section" (click)="redirectToGmail()">
+              <i class="fa fa-envelope"></i>
+              <span class="email">admin&#64;artiset.in</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-container">
+            <img src="assets/pexels-hillaryfox-1595392.jpg" alt="Get trained">
+          </div>
+          <div class="card-content">
+            <h3>Get trained</h3>
+            <div class="email-section" (click)="redirectToGmail()">
+              <i class="fa fa-envelope"></i>
+              <span class="email">admin&#64;artiset.in</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-container">
+            <img src="assets/pexels-fauxels-3184418.jpg" alt="Work with us">
+          </div>
+          <div class="card-content">
+            <h3>Work with us</h3>
+            <div class="email-section" (click)="redirectToGmail()">
+              <i class="fa fa-envelope"></i>
+              <span class="email">admin&#64;artiset.in</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="contact-container">
+        <div class="address">
+          <img src="assets/location-icon.png" alt="Location Icon" class="icon">
+          <p>Head Quarter 101, Ocean Complex,<br>Sec-18,<br>Noida-201301</p>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <img src="assets/call-icon.png" alt="Phone Icon" class="icon">
+            <p (click)="redirectToCall()">+91 8600735433</p>
+          </div>
+          <div class="contact-item">
+            <img src="assets/mail-icon.png" alt="Email Icon" class="icon">
+            <p (click)="redirectToGmail()">admin&#64;artiset.in</p>
+          </div>
+          <div class="contact-item">
+            <img src="assets/whatsapp-icon.png" alt="WhatsApp Icon" class="icon">
+            <p (click)="redirectToWhatsApp()">+91 8600735433</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="form-section">
+        <div class="background-image">
+          <img src="assets/form-bg-img.png" alt="Background" class="background-image">
+        </div>
+    
+        <div class="form-wrapper">
+          <h2 class="form-header">Stay connected with us for latest news and updates</h2>
+          <div class="form-content">
+            <form (ngSubmit)="onSubmit()">
+              <input type="text" placeholder="Enter your full name" [(ngModel)]="formData.name" name="name" required />
+              <input type="email" placeholder="Email" [(ngModel)]="formData.email" name="email" required />
+              <input type="tel" placeholder="Phone Number" [(ngModel)]="formData.phone" name="phone" required />
+              <input type="text" placeholder="Job Title" [(ngModel)]="formData.jobTitle" name="jobTitle" required />
+              <textarea placeholder="How Can We Help You?" [(ngModel)]="formData.message" name="message" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <app-footer></app-footer>
+            
+    
+    

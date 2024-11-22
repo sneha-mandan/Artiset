@@ -1,0 +1,89 @@
+<app-navbar></app-navbar>
+  <!-- <p class="top-text">Our Achievements</p> -->
+  <section class="card-container" id="card-container">
+    <div class="card-wrapper">
+      <div *ngFor="let card of cardData" class="card">
+        <img [src]="card.Image" [alt]="card.Title">
+        <h3>{{ card.Title }}</h3>
+        <p>{{ card.Description }}</p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+      <!-- Duplicate cards for seamless scrolling -->
+      <div *ngFor="let card of cardData" class="card duplicate">
+        <img [src]="card.Image" [alt]="card.Title">
+        <h3>{{ card.Title }}</h3>
+        <p>{{ card.Description }}</p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+<section class="container" id="card-container">
+    <div *ngFor="let card of skillsCardData" class="box" id="box-{{ card.Title }}">
+      <img [src]="card.Image" [alt]="card.Title" class="box-image" id="box-image-{{ card.Title }}" />
+      <h2 class="box-title" id="box-title-{{ card.Title }}">{{ card.Title }}</h2>
+      <p class="box-description" id="box-description-{{ card.Title }}">{{ card.Description }}</p>
+      <a href="#" class="btn" id="box-btn-{{ card.Title }}">{{ card.ButtonText || 'Learn More' }}</a>
+    </div>
+  </section>
+  
+  
+
+<h1>Why Choose Us</h1>
+
+
+<div class="wrapper">
+    <div class="grid-item top-left">
+        <h3>Approach</h3>
+        <p>We adopt a client-centric approach, focusing on your goals. Our methods are flexible and adaptive to changing market conditions.</p>
+    </div>
+    
+    <div class="grid-item top-right">
+        <h3>Growth</h3>
+        <p>We prioritize your business expansion with tailored solutions. Our strategies are designed to foster sustainable growth.</p>
+    </div>
+
+    <div class="grid-item central-strategy">
+        <h3>Strategy</h3>
+        <p>Our expert team crafts innovative strategies to meet your unique needs. We ensure your business stays ahead of the competition.</p>
+    </div>
+
+    <div class="grid-item central-image-container">
+        <img src="assets/pexels-yankrukov-8867276.jpg" alt="Strategy Image" class="central-image">
+    </div>
+
+    <div class="grid-item bottom-left">
+        <h3>Experience</h3>
+        <p>Our team brings years of industry experience to the table. We leverage our expertise to deliver exceptional results.</p>
+    </div>
+    
+    <div class="grid-item bottom-right">
+        <h3>24/7 User Support</h3>
+        <p>We provide round-the-clock support to address your concerns. Our dedicated team is always ready to assist you.</p>
+    </div>
+    
+    <div class="grid-item center-bottom">
+        <h3>Global Reach</h3>
+        <p>With a presence in multiple countries, we offer global solutions. Our network ensures you get the best services worldwide.</p>
+    </div>
+</div>
+
+<div class="clients-section">
+    <h2>Our Clients</h2>
+    <div class="clients-grid">
+        <div class="client-logo logo-align"><img src="assets\bcg.jpeg" alt="BCG Logo"></div>
+        <div class="client-logo"><img src="assets\pepsi.jpeg" alt="Pepsi Logo"></div>
+        <div class="client-logo"><img src="assets\sony.png" alt="Sony Logo"></div>
+        <div class="client-logo"><img src="assets\satyam.png" alt="Satyam Enterprises Logo"></div>
+        <div class="client-logo logo-align"><img src="assets\amdocs.jpeg" alt="Amdocs Logo"></div>
+        <div class="client-logo"><img src="assets\hyperquality.jpeg" alt="HyperQuality Logo"></div>
+        <div class="client-logo"><img src="assets\pis.jpeg" alt="PIS Logo"></div>
+        <div class="client-logo"><img src="assets\soprasteria.jpeg" alt="Sopra Steria Logo"></div>
+        <div class="client-logo logo-align"><img src="assets\tatras.webp" alt="Tatras Logo"></div>
+        <div class="client-logo"><img src="assets\bluepi.jpeg" alt="Bluepi Logo"></div>
+        <div class="client-logo"><img src="assets\gulshan.jpeg" alt="Gulshan Logo"></div>
+        <div class="client-logo"><img src="assets\tega.jpeg" alt="Tega Logo"></div>
+    </div>
+</div>
+
+<app-footer></app-footer>
